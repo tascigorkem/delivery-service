@@ -1,0 +1,32 @@
+server:
+  port: 8081
+
+# custom path for api docs
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    operations-sorter: method
+
+spring:
+
+  application:
+    name: delivery-service
+
+logging:
+  level:
+    org.springframework: INFO
+    com.tascigorkem.linkconverterservice: DEBUG
+  # output to a file
+  file.name: app.log
+  pattern.file: '%d %p %c{1.} [%t] %m%n'
+  pattern.console: '%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n'
+
+---
+spring:
+  profiles: local
+
+---
+spring:
+  profiles: docker
+

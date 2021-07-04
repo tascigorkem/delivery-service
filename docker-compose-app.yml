@@ -1,0 +1,17 @@
+#Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
+version: '3.8'
+
+services:
+
+  delivery-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    container_name: delivery-service
+    hostname: delivery-service
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+

@@ -8,10 +8,12 @@ If Customers in our Store order they want to know when the expected delivery dat
 
 3- The working times in the warehouse. Our warehouse only works from Monday to Friday.
 
-4- Public Holidays, in Germany we have a lot of common public holidays but Berlin has some special holidays.
+4- Public Holidays, Germany has a lot of common public holidays but Berlin has some special holidays.
 
-So the challenge is, please provide us with a function, where we can fill in the current time and a provider and get returned the expected delivery date.
+So the challenge is, please provide a function, where can be filled in the current time and a provider and get returned the expected delivery date.
+
 The configuration for different carriers is free to choose.
+
 For the given test data, we assume cut-off-time: 12 and delivery days: 2
 
 POST: `http://localhost:8081/delivery/date` - 1 order in request

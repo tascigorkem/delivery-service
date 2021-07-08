@@ -13,6 +13,8 @@ spring:
   application:
     name: delivery-service
 
+holiday-external-client-url: https://holidayapi.com/v1/holidays?pretty&country={countryCode}&year={year}&key=54c7bf0e-f5ea-4f1a-9ae8-3c90819d9184
+
 logging:
   level:
     org.springframework: INFO
